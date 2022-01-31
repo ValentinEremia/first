@@ -1,0 +1,87 @@
+html {
+  background: black url(assets/fundal-ios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110%;
+  background-position: center;
+  text-shadow: 5px 10px 10px #353535;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  display: grid;
+
+  place-items: center;
+  margin: 0;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.Container {
+  width: 85%;
+  margin: 6vh auto;
+  background: rgba(47, 64, 223, 0.788);
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 1.5em;
+}
+header {display: block; 
+}
+
+.Avatar {
+  
+  display: block;
+  float: left;
+  width: 125px;
+  height: auto;
+  margin: 0 2em 1em 1em;
+  border-radius: 50%;
+}
+.TitlulPaginii {
+
+  display: block;
+  margin: 1;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.5rem;
+}
+main {
+}
+
+.ListaLinkuri {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.ListaItem {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgb(32, 173, 238);
+  text-decoration: none;
+}
+.ListaLink {
+  display: block;
+  padding: 1em;
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  text-shadow: 5px 10px 10px 2b2b2b
+}
+.ListaTitlu,
+.ListaText {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-shadow: 5px 10px 10px #2b2b2b
+}
+.e-mail{
+    display: block;
+    margin: 0;
+    padding: 1em;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+}
