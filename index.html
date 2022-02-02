@@ -1,83 +1,142 @@
 <!DOCTYPE html>
-<html lang="ro-RO">
+<html lang="ro-RO" class="no-js">
   <head>
+    <!-- setup -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+		<!-- SEO -->
     <title>Valentin Eremia - Link-uri utile</title>
-    <meta charset="utf-8" />
-    <meta name="robots" content="index, fallow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Toate link-urile mele.Profilurile de social media, plus grupurile pe care sunt activ."
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Toate link-urile mele.Profilurile de social media." />
+    <link rel="canonical" href="https://valentineremia.github.io/first/" />
     <meta property="og:title" content="Valentin Eremia - Link-uri utile" />
     <meta property="og:site_name" content="Valentin Eremia" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="  " />
-    <!--To Do-->
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:url" content="https://valentineremia.github.io/first/" />
     <meta property="og:image" content="og-image.jpg" />
     <!--To Do-->
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="628" />
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <div class="Container">
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Toate link-urile mele.Profilurile de social media." />
+    <meta property="article:publisher" content="https://www.facebook.com/valentin.eremia.5095/" />
+		<meta property="article:section" content="Link In Bio" />
+		<meta property="article:published_time" content="2022-02-02T23:27:55+03:00" />
+		<meta property="article:modified_time" content="2022-02-02T23:27:57+03:00" />
+    <meta name="twitter:site" content="@ValentinEremia" />
+		<meta name="twitter:creator" content="@ValentinEremia" />
+		<meta name="twitter:card" content="summary_large_image" />
+
+    <!-- design   ------- De facut/modificat ------->
+
+		<link rel="stylesheet" href="style.css" />    
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    
+    <!-- de facut logouri ca mai sus!!!  -->
+
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4f6df5" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<link rel="manifest" href="./my.webmanifest" />
+		<meta name="apple-mobile-web-app-title" content="Valentin Eremia - Link-uri utile" />
+		<meta name="application-name" content="Valentin Eremia - Link-uri utile" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="theme-color" content="#ffffff" />
+
+    <!-- optimize -->
+		<script type="module">
+			document.documentElement.classList.remove('no-js');
+			document.documentElement.classList.add('js');
+		</script>
+		<link rel="preload" href="./Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin />
+	</head>
+
+  <body itemscope itemtype="https://schema.org/ProfilePage">
+    <div class="Container" itemscope itemtype="https://schema.org/Person">
+     
       <header>
-        <img class="Avatar" src="assets/poza-profil.jpg" width="112px"  alt="Poza de profil" />
-        <h1 class="TitlulPaginii">
-          <strong itemprop="name">Valentin Eremia</strong>
-        </h1>
-        <p>Toate link-urile mele. Profilurile de social media.</p>
-      </header>
+				<picture class="Avatar">
+					<source type="image/webp" srcset="
+					valentin-eremia-112.webp 112w,
+					valentin-eremia-192.webp 192w
+					" sizes="
+					(max-width: 929px) 112px,
+					(min-width: 930px) clamp(130px, 14vw, 12rem)
+					" />
+					<img srcset="
+					valentin-eremia-112.jpg 112w,
+					valentin-eremia-192.jpg 192w
+					" sizes="
+					(max-width: 929px) 112px,
+					(min-width: 930px) clamp(130px, 14vw, 12rem)
+					" src="./valentin-eremia-112.jpg" alt="Imagine de profil pentru Valentin Eremia" loading="lazy" decoding="async" width="112" height="112" itemprop="image" />
+				</picture>
+				<h1 class="TitlulPaginii">
+					<strong itemprop="name">Valentin Eremia</strong>
+				</h1>
+				<h2 class="SubtitlulPaginii" itemprop="jobTitle">Inginer Electronist, Freelancer</h2>
+				<p class="DescrierePrincipala" itemprop="description">Toate link-urile mele. Profilurile de social media.</p>
+			</header>
+
       <main>
         <ul class="ListaLinkuri">
           <li class="ListaItem">
-            <a
-              href="https://www.youtube.com/user/licanianul/videos?view=0&sort=dd&shelf_id=0"
-              class="ListaLink"
-              title="Aboneaza-te la canalul meu de YouTube!"
-              ><h2 class="ListaTitlu">📺 YouTube</h2>
-              <p class="ListaText">https://www.youtube.com/user/licanianul</p>
-            </a>
-          </li>
+            <a href="https://www.youtube.com/user/licanianul" class="ListaLink" title="Abonează-te la canalul meu de YouTube" target="_blank" rel="noreferrer noopener">
+							<h2 class="ListaTitlu">🔴 YouTube</h2>
+							<p class="ListaText" itemprop="url">https://www.youtube.com/user/licanianul/</p>
+						</a>
+           </li>
+           <li class="ListaItem">
+						<a href="https://www.instagram.com/licanianul/" class="ListaLink" title="Vezi profilul meu de Instagram" target="_blank" rel="noreferrer noopener">
+							<h2 class="ListaTitlu">✨ Instagram</h2>
+							<p class="ListaText" itemprop="url">https://www.instagram.com/licanianul/</p>
+						</a>
+					</li>
           <li class="ListaItem">
-            <a
-              href="https://www.instagram.com/licanianul/"
-              class="ListaLink"
-              title="Vezi profilul meu de Instagram!"
-              ><h2 class="ListaTitlu">✨ Instagram</h2>
-              <p class="ListaText">https://www.instagram.com/licanianul</p>
-            </a>
-          </li>
+						<a href="https://www.facebook.com/valentin.eremia.5095/" class="ListaLink" title="Vezi pagina mea de Facebook" target="_blank" rel="noreferrer noopener">
+							<h2 class="ListaTitlu">🔵 Facebook</h2>
+							<p class="ListaText" itemprop="url">https://www.facebook.com/valentin.eremia/</p>
+						</a>
+					</li>
           <li class="ListaItem">
-            <a
-              href="https://www.facebook.com/valentin.eremia.5095/"
-              class="ListaLink"
-              title="Vezi profilul meu de Facebook!"
-              ><h2 class="ListaTitlu">🔵 Facebook</h2>
-              <p class="ListaText">https://www.facebook.com/valentin.eremia</p>
-            </a>
-          </li>
+						<a href="https://twitter.com/Valenti3112" class="ListaLink" title="Vezi profilul meu de Twitter" target="_blank" rel="noreferrer noopener">
+							<h2 class="ListaTitlu">🐦 Twitter</h2>
+							<p class="ListaText" itemprop="url">https://twitter.com/Valenti3112/</p>
+						</a>
+					</li>
           <li class="ListaItem">
-            <a
-              href="https://www.linkedin.com/in/valentin-eremia-931942229/"
-              class="ListaLink"
-              title="Acesta este profilul meu de Linkedin!"
-              ><h2 class="ListaTitlu">📝 Linkedin</h2>
-              <p class="ListaText">https://www.linkedin.com/in/valentin-eremia</p>
-            </a>
-          </li>
-          <li class="e-mail">
-            <h2 class="ListaTitlu">📬 valentineremia@yahoo.com
-              
-            </h2>
-            
-
+						<a href="https://www.tiktok.com/@licanny1" class="ListaLink" title="Vezi profilul meu de TikTok" target="_blank" rel="noreferrer noopener">
+							<h2 class="ListaTitlu">✨ TikTok</h2>
+							<p class="ListaText" itemprop="url">https://www.tiktok.com/@licanny1/</p>
+						</a>
+					</li>
+          <li class="ListaItem">
+						<a href="https://www.linkedin.com/in/valentin-eremia-931942229/" class="ListaLink" title="Vezi profilul meu de LinkedIn" target="_blank" rel="noreferrer noopener">
+							<h2 class="ListaTitlu">📝 LinkedIn</h2>
+							<p class="ListaText" itemprop="url">https://www.linkedin.com/in/valentin-eremia/</p>
+						</a>
+					</li>
+          <li class="ListaItem">
+						<a href="mailto:valentineremia@yahoo.com?subject=Salutare!" class="ListaLink" title="Trimite-mi un email acum">
+							<h2 class="ListaTitlu">📧 E-mail:</h2>
+							<p class="ListaText" itemprop="email">valentineremia@yahoo.com</p>
+						</a>
+					</li>
         </ul>
+      </main>
+      <footer>
 
-      </main> 
-
+			</footer> 
     </div>
+    <script defer src="script.js"></script>
   </body>
 </html>
-<!--https://www.youtube.com/watch?v=00O9rlMWOoY&t=469s   minutul 1:19:00

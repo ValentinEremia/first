@@ -1,91 +1,275 @@
-html {
-  
-  margin: 0;
-  padding: 0;
-  background: rgb(0 0 0) url(assets/fundal-ios.jpg) center center;
-  background-repeat: no-repeat;
-  background-size: 100vh;
-  width: 100%;
-  
-  
+@charset "UTF-8";
+/* Typeface source: https://rsms.me/inter/ */
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("./Inter-roman.var.woff2?v=3.18") format("woff2");
+}
 
-  text-shadow: 5px 10px 10px #353535;
-  color: rgb(255, 255, 255);
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: black url("/background.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-shadow: 5px 10px 10px #2f2f2f;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', Helvetica, Arial, sans-serif;
+  }
 }
 
 body {
-  display: grid;
-  place-items: center;
+  display: block;
+  min-height: 100vh;
   margin: 0;
-  font-family: Inter, Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.5em;
+  text-rendering: optimizeSpeed;
 }
+
+@media (min-width: 500px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+strong {
+  font-weight: 900;
+}
+
 .Container {
-  
-  width: 90%;
-  height:fit-content;
-  margin: 6vh auto;
-  background: rgba(47, 64, 223, 0.788) ;
-  background-size: cover;
-  padding: 0.8rem;
-  border-radius: 2rem;
+  background: rgba(61, 89, 211, 0.835);
+  padding: 1rem;
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1.5em;
 }
 
+@media (min-width: 300px) {
+  .Container {
+    margin: 2vh;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .Container {
+    margin: 7vw;
+    padding: 3rem;
+  }
+}
+
+header {
+  display: block;
+}
 
 .Avatar {
-  
   display: block;
-  float: left;
   width: 112px;
+  margin: 0 1em 1em 0;
+}
+
+@media (min-width: 380px) {
+  .Avatar {
+    float: left;
+  }
+}
+
+@media (min-width: 930px) {
+  .Avatar {
+    width: clamp(130px, 14vw, 12rem);
+  }
+}
+
+.Avatar img {
+  display: block;
+  width: 100%;
   height: auto;
-  margin: -0.3em 1em 1.5em 1em;
   border-radius: 50%;
 }
-.TitlulPaginii {
 
+.TitlulPaginii {
   display: block;
-  margin: 1;
-  font-size: clamp(2rem, 6vw, 3rem);
-  line-height: 1.7rem;
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1em;
 }
 
+.SubtitlulPaginii {
+  display: block;
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.DescrierePrincipala {
+  display: block;
+  margin: 0.5em 0 1.5em;
+}
+
+@media (min-width: 500px) {
+  .DescrierePrincipala {
+    margin-bottom: 0.5em;
+  }
+}
+
+main {
+  clear: both;
+}
 
 .ListaLinkuri {
   display: block;
-  margin:0 0 1rem 0;
+  margin: 0;
   padding: 0;
+  border-top: 1px solid #dddddd;
 }
+
+@media (min-width: 1800px) {
+  .ListaLinkuri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .ListaItem {
   display: block;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid rgb(32, 173, 238);
-  text-decoration: none;
+  border-bottom: 1px solid #dddddd;
 }
+
 .ListaLink {
   display: block;
-  padding: 1.3em;
-  color: rgb(253, 253, 253);
+  padding: 0.5em;
+  color: #fff;
   text-decoration: none;
-  text-shadow: 5px 10px 10px 2b2b2b
 }
-.ListaTitlu,
-.ListaText {
+
+.ListaLink:hover {
+  background: white;
+  color: black;
+  text-shadow: 5px 10px 10px #4b4b4b;
+}
+
+.ListaTitlu, .ListaText {
   display: block;
   margin: 0;
   padding: 0;
   font-size: 1em;
   line-height: 1.5em;
-  text-shadow: 5px 10px 10px #2b2b2b
+  font-weight: 900;
+  text-shadow: 5px 10px 10px #4d4b4b;
 }
-.e-mail{
-    display: block;
-    margin: 0;
-    padding: 1.3em;
-    font-size: 1em;
+
+.ListaText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  * {
+    background-image: none;
+    background: white;
+    color: black;
+  }
+  @page {
+    margin: 2cm;
+  }
+  @page :first {
+    margin-top: 3cm;
+  }
+  @page :left {
+    margin-right: 3cm;
+  }
+  @page :right {
+    margin-left: 3cm;
+  }
+  html {
+    background: white;
+    font-size: 12pt;
     line-height: 1.5em;
-    color: rgb(255, 255, 255);
+  }
+  a:link, a:visited {
+    color: #00f;
+    background: transparent;
+    font-weight: bold;
+  }
+  a:not([href^="http"]):after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+  a[href^="/"]:after {
+    content: " (https://valentineremia.github.io/first" attr(href) ") ";
+  }
+  /*a:not(:local-link):after { content: " (" attr(href) ")»"; }*/
+  a:after > img {
+    content: "";
+  }
+  body::after {
+    content: "Copyright © Valentin Eremia, toate drepturile rezervate.";
+    display: block;
+    text-align: center;
+  }
+  .Container {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  h1 + h2 {
+    page-break-before: avoid;
+  }
+  table, pre, img, svg, blockquote, a {
+    break-inside: avoid;
+  }
+  ul, ol, dl {
+    page-break-before: avoid;
+  }
+  .TitlulPaginii {
+    padding-top: 0.5em;
+  }
+  .ListaText {
+    display: inline;
+    color: #00f;
+    white-space: normal;
+    text-decoration: underline;
+  }
 }
+/*# sourceMappingURL=style.css.map */
