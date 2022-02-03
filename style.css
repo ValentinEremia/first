@@ -6,7 +6,7 @@
   font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("./Inter-roman.var.woff2") format("woff2");
+  src: url("./Inter-roman.var.woff2?v=3.18") format("woff2");
 }
 
 *, *::before, *::after {
@@ -14,13 +14,12 @@
 }
 
 html {
-  background: black url("./background.jpg") center center no-repeat;
+  background: black url("background.jpg") center center no-repeat;
   background-size: cover;
   color: white;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  text-shadow: 5px 10px 10px #2f2f2f;
 }
 
 @supports (font-variation-settings: normal) {
@@ -57,7 +56,7 @@ strong {
 }
 
 .Container {
-  background: rgba(61, 89, 211, 0.835);
+  background: rgba(79, 109, 245, 0.8);
   padding: 1rem;
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1.5em;
@@ -141,7 +140,7 @@ main {
   display: block;
   margin: 0;
   padding: 0;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #fff;
 }
 
 @media (min-width: 1800px) {
@@ -155,7 +154,7 @@ main {
   display: block;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #fff;
 }
 
 .ListaLink {
@@ -168,7 +167,6 @@ main {
 .ListaLink:hover {
   background: white;
   color: black;
-  text-shadow: 5px 10px 10px #4b4b4b;
 }
 
 .ListaTitlu, .ListaText {
@@ -178,7 +176,6 @@ main {
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 900;
-  text-shadow: 5px 10px 10px #4d4b4b;
 }
 
 .ListaText {
@@ -233,7 +230,7 @@ main {
     font-size: 0.9em;
   }
   a[href^="/"]:after {
-    content: " (https://valentineremia.github.io/first" attr(href) ") ";
+    content: " (https://valentineremia.github.io/first/" attr(href) ") ";
   }
   /*a:not(:local-link):after { content: " (" attr(href) ")»"; }*/
   a:after > img {
