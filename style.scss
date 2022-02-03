@@ -7,12 +7,12 @@
 	font-display: swap;
 	font-style: normal;
 	font-named-instance: 'Regular';
-	src: url("Inter-roman.var.woff2") format("woff2");
+	src: url("./Inter-roman.var.woff2") format("woff2");
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { background: black url("background.jpg") center center no-repeat; background-size: cover; color: white; font-family: 'Inter', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5em;text-shadow: 5px 10px 10px #2f2f2f;}
+html { background: black url("./background.jpg") center center no-repeat; background-size: cover; color: white; font-family: 'Inter', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5em;text-shadow: 5px 10px 10px #2f2f2f;}
 @supports (font-variation-settings: normal) {
 	html { font-family: 'Inter var', Helvetica, Arial, sans-serif; } 
 }
