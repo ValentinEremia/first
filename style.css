@@ -6,7 +6,7 @@
   font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("./Inter-roman.var.woff2?v=3.18") format("woff2");
+  src: url("Inter-roman.var.woff2") format("woff2");
 }
 
 *, *::before, *::after {
@@ -14,7 +14,7 @@
 }
 
 html {
-  background: black url("/background.jpg") center center no-repeat;
+  background: black url("background.jpg") center center no-repeat;
   background-size: cover;
   color: white;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
