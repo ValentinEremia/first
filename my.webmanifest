@@ -1,11 +1,11 @@
 {
-	"name": "Valentin_Eremia",
-	"short_name": "Links",
+	"name": "My.first.PWA",
+	"short_name": "Valentin.E.ro",
 	"description": "Profilurile de social media .",
 	"start_url": "./",
 	"display": "fullscreen",
-	"theme_color": "#d64b4b",
-	"background_color": "#d64b4b",
+	"theme_color": "##121212",
+	"background_color": "##121212",
 	"icons": [
 		{
 			"src": "./favicon-192.png",
