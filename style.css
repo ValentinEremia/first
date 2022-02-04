@@ -14,7 +14,7 @@
 }
 
 html {
-  background: black url("background.jpg") center center no-repeat;
+  background: black url("background.webp") center center no-repeat;
   background-size: cover;
   color: white;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
