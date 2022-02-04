@@ -4,8 +4,8 @@
 	"description": "Profilurile de social media .",
 	"start_url": "./",
 	"display": "fullscreen",
-	"theme_color": "#005CAA",
-	"background_color": "#005CAA",
+	"theme_color": "#19192D",
+	"background_color": "#19192D",
 	"icons": [
 		{
 			"src": "./favicon-192.png",
