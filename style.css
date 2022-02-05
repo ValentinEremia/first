@@ -59,7 +59,7 @@ strong {
   padding: 1rem;
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1.5em;
-  background: linear-gradient(to right bottom, rgba(79, 109, 245, 0.924), rgba(118, 79, 245, 0.335));
+  background: linear-gradient(to right bottom, rgba(79, 109, 245, 0.733), rgba(118, 79, 245, 0.335));
   backdrop-filter: blur(0.7rem);
 }
 

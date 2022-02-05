@@ -30,7 +30,7 @@ strong { font-weight: 900; }
 .Container { padding: 1rem; font-size: clamp(1rem, 2vw, 2rem); line-height: 1.5em;
 	@media (min-width: 300px) { margin: 2vh; padding: 2rem; border-radius: 2rem; }
 	@media (min-width: 500px) { margin: 7vw; padding: 3rem; }
-	background: linear-gradient( to right bottom, rgba(79, 109, 245, 0.924), rgba(118, 79, 245, 0.335) );
+	background: linear-gradient( to right bottom, rgba(79, 109, 245, 0.733), rgba(118, 79, 245, 0.335) );
 	backdrop-filter: blur(0.7rem);
 }
 	header { display: block; }
