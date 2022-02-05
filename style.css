@@ -276,8 +276,5 @@ main {
     white-space: normal;
     text-decoration: underline;
   }
-  .TitlulPaginii, .SubtitlulPaginii, .DescrierePrincipala, .ListaTitlu {
-    text-shadow: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */
