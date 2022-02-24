@@ -1,7 +1,7 @@
 {
 	"name": "My.first.PWA",
-	"short_name": "Valentin.E.ro",
-	"description": "Profilurile de social media .",
+	"short_name": "Vali.E.",
+	"description": "Profilurile de social media.",
 	"start_url": "./",
 	"display": "fullscreen",
 	"theme_color": "#19192D",
