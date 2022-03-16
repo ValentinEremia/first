@@ -202,7 +202,6 @@ main {
 }
 .map iframe {
   width: 100%;
-  filter: invert(90%);
   aspect-ratio: 1;
   border-radius: 15px;
 }
