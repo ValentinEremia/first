@@ -77,6 +77,12 @@ strong {
 header {
   display: block;
 }
+@media (min-width: 930px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.1fr;
+  }
+}
 
 .Avatar {
   display: block;
@@ -91,6 +97,12 @@ header {
 @media (min-width: 930px) {
   .Avatar {
     width: clamp(130px, 14vw, 12rem);
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto 1em 1em auto;
+    display: flex;
+    grid-row: 1/4;
+    grid-column: 1/2;
   }
 }
 
@@ -109,6 +121,14 @@ header {
   line-height: 1em;
   text-shadow: 5px 10px 15px #17171f;
 }
+@media (min-width: 930px) {
+  .TitlulPaginii {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 
 .SubtitlulPaginii {
   display: block;
@@ -118,6 +138,15 @@ header {
   line-height: 1em;
   text-shadow: 5px 10px 15px #242531;
 }
+@media (min-width: 930px) {
+  .SubtitlulPaginii {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.8em;
+  }
+}
 
 .DescrierePrincipala {
   display: block;
@@ -126,7 +155,15 @@ header {
 }
 @media (min-width: 500px) {
   .DescrierePrincipala {
-    margin-bottom: 0.5em;
+    margin: 0 0 1.5em 0;
+  }
+}
+@media (min-width: 930px) {
+  .DescrierePrincipala {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
